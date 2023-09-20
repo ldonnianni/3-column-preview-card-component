@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  font-family: Lexend Deca;
+  font-weight: 400;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  section {
+    height: 100vh;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  width: 210px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 240px;
+    height: 430px;
+  }
+}
+.card__car-logo {
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.card__car-model {
+  width: 100%;
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .card__car-model {
+    font-size: 2.8rem;
+  }
+}
+.card__car-description {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin-right: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-left: 10px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .card__car-description {
+    font-size: 1rem;
+  }
+}
+.card__btn {
+  font-size: 0.8rem;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  width: 50%;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  background: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 768px) {
+  .card__btn {
+    font-size: 1rem;
+  }
+}
+.card__btn:hover {
+  background: white;
+}
+.card__btn:active {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.card--orange {
+  background: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .card--orange {
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+.card--cyan {
+  background: hsl(184, 100%, 22%);
+}
+
+.card--darkcyan {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+@media screen and (min-width: 768px) {
+  .card--darkcyan {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.btn--orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn--cyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn--darkcyan {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  height: 40px;
+  left: 0px;
+  bottom: 0;
+  color: black;
+  width: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .attribution {
+    position: fixed;
+  }
+}
+.attribution a {
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
