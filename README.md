@@ -144,6 +144,6 @@ In the future projects I would like to try something with Grid, since I haven't 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ldonnianni)
+- Frontend Mentor - [@ldonnianni](https://www.frontendmentor.io/profile/ldonnianni)
 
 
