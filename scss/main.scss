@@ -1,0 +1,141 @@
+@import 'config';
+
+body {
+    background: $Very-light-gray;
+    color: $Very-light-gray;
+    font-family: Lexend Deca;
+    font-weight: 400;
+}
+
+section {
+    @include desktop {
+        height: 100vh;
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    @include desktop {
+        width: 240px;
+        height: 430px;
+    }
+    
+    width: 210px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+
+    &__car-logo {
+        width: 23%;
+        @include margin-left;
+    }
+
+    &__car-model {
+        @include desktop {
+            font-size: 2.8rem;
+        }
+
+        width: 100%;
+        font-family: Big Shoulders Display;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        @include margin-left;
+    }
+
+    &__car-description {
+        @include desktop {
+            font-size: 1rem;
+        }
+
+        font-size: .8rem;
+        line-height: 1.5rem;
+        margin-right: 20px;
+        color: $Transparent-white;
+        @include margin-left;
+    }
+
+    &__btn {
+
+        @include desktop {
+           font-size: 1rem;
+        }
+
+        font-size: .8rem;
+        padding: 10px 15px;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        width: 50%;
+        cursor: pointer;
+        margin-top: 40px;
+        @include margin-left;
+
+        @include btn-bg($Very-light-gray);
+    }
+}
+
+.card--orange {
+    @include desktop {
+        border-radius: 8px 0 0 8px;
+    }
+    
+    background: $Bright-orange;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.card--cyan {
+    background: $Dark-cyan;
+}
+
+.card--darkcyan {
+    @include desktop {
+        border-radius: 0 8px 8px 0;
+    }
+
+    background: $Very-dark-cyan;
+    border-radius: 0 0 8px 8px;
+}
+
+.btn--orange {
+    color: $Bright-orange;
+}
+
+.btn--cyan {
+    color: $Dark-cyan;
+}
+
+.btn--darkcyan {
+    color: $Very-dark-cyan;
+}
+
+.attribution {
+    @include desktop {
+        position: fixed;
+    }
+
+    height: 40px;
+    left: 0px;
+    bottom: 0;
+    color:black;
+    width: 100%;
+    z-index: 1;
+
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+}
